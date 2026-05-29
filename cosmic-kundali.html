@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Architect of Cosmic Destiny — Kundali of Shubham Patel</title>
+<style>
+  :root{
+    --noir:#070512;
+    --midnight:#0b1026;
+    --indigo:#141e3c;
+    --purple-1:#1a0b2e;
+    --purple-2:#2d1b4e;
+    --purple-3:#3a2360;
+    --gold:#d4af37;
+    --gold-soft:#f5d76e;
+    --gold-deep:#9b7d2a;
+    --ink:#e9e3ff;
+    --muted:#a99fce;
+    --line:rgba(212,175,55,0.28);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--noir);color:var(--ink);font-family:"Georgia","Times New Roman",serif;-webkit-font-smoothing:antialiased}
+  body{
+    background:
+      radial-gradient(1200px 800px at 80% -10%, rgba(58,35,96,.55), transparent 60%),
+      radial-gradient(900px 700px at -10% 20%, rgba(20,30,60,.6), transparent 55%),
+      radial-gradient(1000px 900px at 50% 120%, rgba(45,27,78,.5), transparent 60%),
+      linear-gradient(180deg,#070512 0%,#0b1026 45%,#0a0719 100%);
+    min-height:100vh;overflow-x:hidden;
+  }
+  /* ----- animated star layers ----- */
+  .sky{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+  .star{position:absolute;border-radius:50%;background:#fff;opacity:.7;animation:twinkle ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:.15;transform:scale(.8)}50%{opacity:1;transform:scale(1.25)}}
+  .shoot{position:absolute;width:2px;height:2px;background:linear-gradient(90deg,#fff,transparent);
+    box-shadow:0 0 8px 2px rgba(255,255,255,.6);animation:shoot linear infinite;opacity:0}
+  @keyframes shoot{0%{transform:translate(0,0) rotate(35deg);opacity:0}
+    8%{opacity:1}20%{opacity:1}40%{transform:translate(420px,300px) rotate(35deg);opacity:0}100%{opacity:0}}
+
+  .wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:34px 20px 80px}
+
+  /* ----- header ----- */
+  header{text-align:center;margin-bottom:26px}
+  .eyebrow{letter-spacing:.5em;text-transform:uppercase;font-size:11px;color:var(--muted)}
+  .title{
+    font-size:clamp(28px,5vw,52px);font-weight:700;margin:8px 0 4px;
+    background:linear-gradient(90deg,#9b7d2a,#f5d76e,#fff7d6,#f5d76e,#9b7d2a);
+    background-size:200% auto;-webkit-background-clip:text;background-clip:text;
+    -webkit-text-fill-color:transparent;color:transparent;animation:shimmer 6s linear infinite;
+    text-shadow:0 0 40px rgba(212,175,55,.15)}
+  @keyframes shimmer{to{background-position:200% center}}
+  .subtitle{color:var(--muted);font-style:italic;font-size:15px}
+  .birth-line{margin-top:12px;font-size:13px;color:var(--gold-soft);letter-spacing:.08em}
+  .birth-line span{color:var(--muted)}
+
+  /* ----- tabs ----- */
+  .tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:26px 0 22px}
+  .tab{
+    cursor:pointer;border:1px solid var(--line);background:rgba(26,11,46,.55);
+    color:var(--muted);padding:9px 16px;border-radius:999px;font-size:13px;letter-spacing:.06em;
+    transition:.25s;backdrop-filter:blur(6px)}
+  .tab:hover{color:var(--gold-soft);border-color:var(--gold)}
+  .tab.active{color:#1a0b2e;background:linear-gradient(90deg,#d4af37,#f5d76e);border-color:var(--gold-soft);
+    box-shadow:0 0 22px rgba(212,175,55,.4);font-weight:700}
+
+  /* ----- cards / panels ----- */
+  .panel{animation:fade .5s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .card{
+    background:linear-gradient(160deg,rgba(45,27,78,.5),rgba(11,16,38,.6));
+    border:1px solid var(--line);border-radius:18px;padding:22px 24px;margin:14px 0;
+    box-shadow:0 10px 40px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.04)}
+  .card h2{font-size:22px;color:var(--gold-soft);margin-bottom:6px;letter-spacing:.02em}
+  .card h3{font-size:16px;color:var(--gold);margin:18px 0 6px;letter-spacing:.04em}
+  .card p{color:var(--ink);line-height:1.75;margin:8px 0;font-size:15px}
+  .card p.small{color:var(--muted);font-size:13.5px}
+  .lead{font-size:16.5px;color:#f3eeff}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  @media(max-width:820px){.grid2{grid-template-columns:1fr}}
+
+  .pill{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+    color:var(--gold-soft);border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:0 6px 6px 0}
+
+  .truth{border-left:3px solid #e0566b;padding-left:14px;margin:10px 0}
+  .truth b{color:#ff9aa8}
+  .strength{border-left:3px solid #5ad19a;padding-left:14px;margin:10px 0}
+  .strength b{color:#86e8bd}
+
+  table{width:100%;border-collapse:collapse;margin-top:10px;font-size:13.5px}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(212,175,55,.14)}
+  th{color:var(--gold-soft);font-weight:700;letter-spacing:.05em}
+  td{color:var(--ink)}
+  td .conf{font-size:11px;color:var(--muted)}
+
+  /* ----- chart ----- */
+  .chart-stage{position:relative;display:flex;justify-content:center;align-items:center;padding:10px}
+  .mandala{position:absolute;width:430px;height:430px;opacity:.16;animation:spin 90s linear infinite}
+  .mandala.rev{animation:spin 140s linear infinite reverse;width:520px;height:520px;opacity:.08}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .ni-chart{position:relative;filter:drop-shadow(0 0 26px rgba(212,175,55,.18))}
+  .house-num{fill:var(--gold);font-size:11px;font-family:Georgia,serif;opacity:.8}
+  .sign-name{fill:var(--muted);font-size:9px}
+  .planet{fill:var(--gold-soft);font-size:13px;font-weight:bold;font-family:Georgia,serif}
+  .planet.asc{fill:#ff9aa8}
+  .grid-line{stroke:var(--gold);stroke-width:1.4;opacity:.55}
+  .grid-frame{stroke:var(--gold-soft);stroke-width:2.2;fill:rgba(20,11,40,.35)}
+
+  .legend{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:8px}
+  .legend span{font-size:11.5px;color:var(--muted)}
+  .legend b{color:var(--gold-soft)}
+
+  /* ----- timeline ----- */
+  .month{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid rgba(212,175,55,.12)}
+  .month:last-child{border-bottom:none}
+  .moncol{flex:0 0 110px}
+  .moncol .m{color:var(--gold-soft);font-weight:700;font-size:15px}
+  .moncol .d{color:var(--muted);font-size:11px;letter-spacing:.08em}
+  .moncol .rating{margin-top:6px;font-size:11px}
+  .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:4px;vertical-align:middle}
+  .g{background:#5ad19a}.y{background:#f5d76e}.r{background:#e0566b}.b{background:#7aa7ff}
+  .moncon p{margin:3px 0;font-size:14px;line-height:1.65}
+  .tag{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);border:1px solid var(--line);
+    border-radius:6px;padding:2px 7px;margin-right:6px}
+
+  .note{font-size:12.5px;color:var(--muted);line-height:1.7;background:rgba(11,16,38,.5);
+    border:1px dashed rgba(212,175,55,.3);border-radius:14px;padding:14px 16px;margin:18px 0}
+  .note b{color:var(--gold-soft)}
+  footer{text-align:center;color:var(--muted);font-size:12px;margin-top:30px;line-height:1.8}
+  .om{font-size:22px;color:var(--gold);animation:pulse 4s ease-in-out infinite;display:inline-block}
+  @keyframes pulse{0%,100%{opacity:.5;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+  .mantra{font-size:15px;color:var(--gold-soft);letter-spacing:.04em}
+</style>
+</head>
+<body>
+<div class="sky" id="sky"></div>
+<div id="root"></div>
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script>
+/* build a twinkling starfield + occasional shooting stars (vanilla, behind React) */
+(function(){
+  const sky=document.getElementById('sky');
+  for(let i=0;i<90;i++){
+    const s=document.createElement('div');s.className='star';
+    const sz=Math.random()*2.2+0.6;
+    s.style.width=sz+'px';s.style.height=sz+'px';
+    s.style.left=Math.random()*100+'%';s.style.top=Math.random()*100+'%';
+    s.style.animationDuration=(Math.random()*3+2)+'s';
+    s.style.animationDelay=(Math.random()*4)+'s';
+    sky.appendChild(s);
+  }
+  for(let i=0;i<3;i++){
+    const sh=document.createElement('div');sh.className='shoot';
+    sh.style.left=(Math.random()*60)+'%';sh.style.top=(Math.random()*40)+'%';
+    sh.style.animationDuration=(Math.random()*6+7)+'s';
+    sh.style.animationDelay=(Math.random()*8)+'s';
+    sky.appendChild(sh);
+  }
+})();
+</script>
+
+<script type="text/babel">
+const {useState} = React;
+
+/* ============ CHART DATA (sidereal / Lahiri) ============ */
+const PLANETS = [
+  {ab:"As", name:"Lagna (Asc)", sign:"Scorpio",     deg:"18°39'", house:1,  nak:"Jyeshtha",        conf:"High*"},
+  {ab:"Mo", name:"Moon",        sign:"Aquarius",    deg:"28°18'", house:4,  nak:"Purva Bhadrapada",conf:"High"},
+  {ab:"Su", name:"Sun",         sign:"Virgo",       deg:"24°22'", house:11, nak:"Chitra",          conf:"High"},
+  {ab:"Ju", name:"Jupiter",     sign:"Taurus",      deg:"08° (R)",house:7,  nak:"Krittika",        conf:"Med-High"},
+  {ab:"Sa", name:"Saturn",      sign:"Taurus",      deg:"02° (R)",house:7,  nak:"Krittika",        conf:"Med-High"},
+  {ab:"Ra", name:"Rahu",        sign:"Gemini",      deg:"26°",    house:8,  nak:"Punarvasu",       conf:"High"},
+  {ab:"Ke", name:"Ketu",        sign:"Sagittarius", deg:"26°",    house:2,  nak:"Purva Ashadha",   conf:"High"},
+  {ab:"Ma", name:"Mars",        sign:"Leo",         deg:"~03°",   house:10, nak:"Magha",           conf:"Medium"},
+  {ab:"Me", name:"Mercury",     sign:"Libra",       deg:"~16°",   house:12, nak:"Swati",           conf:"Medium"},
+  {ab:"Ve", name:"Venus",       sign:"Libra",       deg:"~27°",   house:12, nak:"Vishakha",        conf:"Medium"},
+];
+
+/* North-Indian house geometry: fixed houses, sign numbers rotate. Asc = Scorpio (sign 8). */
+const HOUSE_CENTROIDS = {
+  1:[150,72],2:[74,26],3:[26,74],4:[74,150],5:[26,226],6:[74,276],
+  7:[150,228],8:[226,276],9:[276,226],10:[226,150],11:[276,74],12:[226,26]
+};
+const SIGN_NAMES=["Aries","Taurus","Gemini","Cancer","Leo","Virgo","Libra","Scorpio","Sagittarius","Capricorn","Aquarius","Pisces"];
+// House -> sign number (1..12). House1 = Scorpio = 8.
+const HOUSE_SIGN = {1:8,2:9,3:10,4:11,5:12,6:1,7:2,8:3,9:4,10:5,11:6,12:7};
+// planets grouped by house
+const HOUSE_PLANETS={};
+PLANETS.forEach(p=>{(HOUSE_PLANETS[p.house]=HOUSE_PLANETS[p.house]||[]).push(p.ab);});
+
+function NorthIndianChart(){
+  const lines=[
+    "M0,0 L300,0 L300,300 L0,300 Z",       // outer square
+    "M0,0 L300,300", "M300,0 L0,300",       // diagonals
+    "M150,0 L300,150 L150,300 L0,150 Z"     // inner diamond
+  ];
+  return (
+    <div className="chart-stage">
+      <svg className="mandala" viewBox="0 0 100 100">
+        {Array.from({length:24}).map((_,i)=>(
+          <line key={i} x1="50" y1="50"
+            x2={50+45*Math.cos(i*Math.PI/12)} y2={50+45*Math.sin(i*Math.PI/12)}
+            stroke="#d4af37" strokeWidth="0.3"/>
+        ))}
+        <circle cx="50" cy="50" r="46" stroke="#d4af37" strokeWidth="0.4" fill="none"/>
+        <circle cx="50" cy="50" r="34" stroke="#d4af37" strokeWidth="0.3" fill="none"/>
+        <circle cx="50" cy="50" r="22" stroke="#d4af37" strokeWidth="0.3" fill="none"/>
+      </svg>
+      <svg className="mandala rev" viewBox="0 0 100 100">
+        {Array.from({length:12}).map((_,i)=>(
+          <circle key={i} cx={50+40*Math.cos(i*Math.PI/6)} cy={50+40*Math.sin(i*Math.PI/6)} r="3"
+            stroke="#f5d76e" strokeWidth="0.3" fill="none"/>
+        ))}
+      </svg>
+
+      <svg className="ni-chart" width="330" height="330" viewBox="-15 -15 330 330">
+        <path d={lines[0]} className="grid-frame"/>
+        <path d={lines[3]} className="grid-frame" fill="rgba(45,27,78,.3)"/>
+        <path d={lines[1]} className="grid-line"/>
+        <path d={lines[2]} className="grid-line"/>
+        {Object.keys(HOUSE_CENTROIDS).map(h=>{
+          const [x,y]=HOUSE_CENTROIDS[h];
+          const sign=HOUSE_SIGN[h];
+          const pls=HOUSE_PLANETS[h]||[];
+          return (
+            <g key={h}>
+              <text x={x} y={y-14} className="house-num" textAnchor="middle">{sign}</text>
+              <text x={x} y={y-3} className="sign-name" textAnchor="middle">{SIGN_NAMES[sign-1].slice(0,3)}</text>
+              {pls.map((ab,i)=>(
+                <text key={ab} x={x-(pls.length-1)*11+i*22} y={y+15}
+                  className={"planet"+(ab==="As"?" asc":"")} textAnchor="middle">{ab}</text>
+              ))}
+            </g>
+          );
+        })}
+      </svg>
+    </div>
+  );
+}
+
+/* ============ TIME STREAM (month-wise) ============ */
+const PAST = [
+  {m:"Dec 2025",d:"Me–Me–Me",rate:["y","Foundation"],tag:"New 17-yr chapter",
+   text:["Your Mercury Mahadasha had just opened (≈Oct 2025) — a brand-new 17-year life-script. December was about laying quiet foundations: new role, new skill-stack, lots of mental churn, messages, paperwork and planning.",
+   "Mercury rules your 8th & 11th and sits in the 12th — so the theme is research, networks and 'behind-the-scenes' income setup rather than loud wins."]},
+  {m:"Jan 2026",d:"Me–Me–Me",rate:["g","Momentum"],tag:"Clarity & networks",
+   text:["Mental clarity and communication sharpened. Good month for learning, negotiation, content, coding and reconnecting with your network (11th-lord activation).",
+   "Jupiter transiting Gemini (your 8th) kept pulling you toward deep/technical or transformative subjects."]},
+  {m:"Feb 2026",d:"Me–Me–Me → Ketu",rate:["y","Shift begins"],tag:"Detachment turn",
+   text:["Strong early-month for ideas and deals. From ~26 Feb the Ketu sub-period began — energy turns inward, some things you were chasing started to feel 'not worth it'.",
+   "First whiff of restlessness and the urge to drop dead-weight commitments."]},
+  {m:"Mar 2026",d:"Me–Me–Ketu",rate:["r","Caution"],tag:"Lay low",
+   text:["The trickiest stretch of the six months. Ketu fogs judgement — risk of mistakes if rushed, confusion, low motivation or a minor health/energy dip.",
+   "Advice you were living through: avoid big irreversible decisions, double-check documents and money, and rest more. Spiritual/again-from-scratch energy was high."]},
+  {m:"Apr 2026",d:"Ketu → Venus (~18th)",rate:["y","Recovery"],tag:"Light returns",
+   text:["First half still had Ketu loose-ends; from mid-April the Venus sub-period began and the mood lifted noticeably — comfort, relationships, money and creativity all warmed up.",
+   "Venus sits in its own sign (Libra, 12th) so pleasures, romance and 'remote/foreign' gains started flowing."]},
+  {m:"May 2026",d:"Me–Me–Venus",rate:["g","Bloom"],tag:"Love & money up",
+   text:["The strongest month of the past six. Venus sub-period favours relationships, aesthetics, deals, partnerships and enjoyment. Finances and harmony improve.",
+   "A good window that opened doors you'll walk through in summer."]},
+];
+const FUTURE = [
+  {m:"Jun 2026",d:"Me–Me–Venus + Jupiter→Cancer",rate:["g","Best window"],tag:"Exalted Jupiter in 9th",
+   text:["A standout month. Around early June, Jupiter enters Cancer — EXALTED — and lights up your 9th house of luck, mentors, dharma and travel. Stacked on the Venus sub-period, this is one of the most fortunate windows of the year.",
+   "Great for opportunities, blessings from seniors, long-distance plans, love and money."]},
+  {m:"Jul 2026",d:"Me–Me–Venus",rate:["g","Expansion"],tag:"Opportunity",
+   text:["Momentum continues. Favourable for relationships, income, creative/tech projects and partnership talk. Exalted Jupiter keeps fortune and growth flowing.",
+   "A real offer, collaboration or relationship step is very possible."]},
+  {m:"Aug 2026",d:"Me–Me–Venus",rate:["g","Gains"],tag:"Network → income",
+   text:["Mercury (your income lord, in Mahadasha) + Venus = gains through network, clients and skill. Strong for finances and 'fulfilment of desires' (11th).",
+   "Keep an eye on a possible Venus retrograde brewing late month — revisit, don't restart, relationship & money matters."]},
+  {m:"Sep 2026",d:"Venus → Sun (~12th)",rate:["y","Pivot"],tag:"Career turns on",
+   text:["First half rounds off the Venus theme (a relationship/financial review with Venus retrograde). From ~12 Sep the Sun sub-period begins — and the Sun is your 10th lord (career/authority).",
+   "Focus pivots hard toward status, recognition and leadership. The 'career switch' window starts opening here."]},
+  {m:"Oct 2026",d:"Me–Me–Sun",rate:["g","Recognition"],tag:"The Great Switch ★",
+   text:["Your power-month for career. Sun = 10th lord activated, around your solar return (birthday ~11 Oct). Strong for promotion, a visible new role, leadership recognition or the decisive professional move.",
+   "If you are planning 'the Great Switch', this is the most supported window of 2026."]},
+  {m:"Nov–Dec 2026",d:"Me–Me–Moon",rate:["g","Consolidation"],tag:"Home / travel / peace",
+   text:["From ~26 Oct the Moon sub-period (your 9th lord) brings emotional fulfilment, travel, home/family matters and a softer, more reflective close to the year. A relocation or significant trip is plausible.",
+   "Bonus: the nodes shift around year-end, easing the Rahu-over-Moon restlessness you've carried. You exit 2026 lighter, with Sade Sati in its final 'graduation' phase."]},
+];
+
+/* ============ TABS CONTENT ============ */
+function Overview(){
+  return (
+    <div className="panel">
+      <div className="card">
+        <h2>The Foundation — Lagna & Nakshatra</h2>
+        <div><span className="pill">Vrishchika Lagna</span><span className="pill">Scorpio Rising</span><span className="pill">Moon: Aquarius</span><span className="pill">Janma Nakshatra: Purva Bhadrapada</span></div>
+        <p className="lead">You rise in <b>Scorpio (Vrishchika)</b> with <b>Jyeshtha</b> on the horizon, and your Moon sits in <b>Aquarius</b> in the deep, mystic star of <b>Purva Bhadrapada</b>. This is the signature of a soul built for depth, transformation and quiet intensity.</p>
+        <div className="grid2">
+          <div>
+            <h3>The Scorpio Ascendant</h3>
+            <p>Mars is your Lagna lord, and it sits powerfully in the <b>10th house (Leo)</b> — the throne of ambition. You are wired for control, research, strategy and survival. People sense an undercurrent in you: magnetic, private, hard to read, impossible to dominate. You rebuild yourself after every fall — that is the Scorpio gift.</p>
+          </div>
+          <div>
+            <h3>The Aquarius Moon</h3>
+            <p>Your emotional mind is futuristic, humanitarian and unconventional, ruled by Saturn &amp; co-ruled by Rahu. You think in systems and big pictures, feel things privately, and need intellectual freedom. In the 4th house it craves a stable inner sanctuary even while the mind roams far.</p>
+          </div>
+        </div>
+        <h3>Esoteric Soul Purpose — Purva Bhadrapada</h3>
+        <p>Purva Bhadrapada is the nakshatra of the <b>"two-faced" cosmic fire</b> — ruled by <i>Aja Ekapada</i>, the one-footed serpent of transformation, and lorded by <b>Jupiter</b>. Its purpose is to burn the bridge between the material and the spiritual: to take intense worldly experience and convert it into wisdom. Your soul-contract is about <b>radical transformation through fire</b> — letting old identities die so a wiser self can rise. You are meant to work at the edge of the hidden (research, depth-tech, the occult, healing, transformation) and to eventually teach or guide from that hard-won depth.</p>
+      </div>
+
+      <div className="card">
+        <h2>Planetary Positions (Sidereal · Lahiri)</h2>
+        <table>
+          <thead><tr><th>Graha</th><th>Sign</th><th>Deg.</th><th>House</th><th>Nakshatra</th><th>Confidence</th></tr></thead>
+          <tbody>
+            {PLANETS.map(p=>(
+              <tr key={p.ab}><td><b>{p.ab}</b> · {p.name}</td><td>{p.sign}</td><td>{p.deg}</td><td>{p.house}</td><td>{p.nak}</td><td><span className="conf">{p.conf}</span></td></tr>
+            ))}
+          </tbody>
+        </table>
+        <div className="legend">
+          <span><b>As</b> Lagna · <b>Su</b> Sun · <b>Mo</b> Moon · <b>Ma</b> Mars · <b>Me</b> Mercury · <b>Ju</b> Jupiter · <b>Ve</b> Venus · <b>Sa</b> Saturn · <b>Ra</b> Rahu · <b>Ke</b> Ketu · (R)=retrograde</span>
+        </div>
+      </div>
+
+      <div className="note">
+        <b>Astrologer–Engineer's honest note.</b> Astrology is a traditional symbolic system, not a scientifically validated predictor of events — treat this as a reflective map, not a guarantee. The slow points I'm confident in: <b>Scorpio Lagna, Aquarius Moon (Purva Bhadrapada), Sun in Virgo, Jupiter &amp; Saturn in Taurus, Rahu/Ketu on the Gemini–Sagittarius axis, and your Mercury Mahadasha</b>. The faster planets <b>(Mars, Mercury, Venus)</b> and the exact Lagna degree are computed by hand and can be off by a sign or a degree. Please verify against ephemeris software (Swiss Ephemeris / Jagannatha Hora / a trusted Jyotishi) before acting on anything major. *Lagna degree is time-sensitive.</div>
+    </div>
+  );
+}
+
+function TimeStream(){
+  const Row=({x})=>(
+    <div className="month">
+      <div className="moncol">
+        <div className="m">{x.m}</div>
+        <div className="d">{x.d}</div>
+        <div className="rating"><span className={"dot "+x.rate[0]}></span>{x.rate[1]}</div>
+      </div>
+      <div className="moncon">
+        <div><span className="tag">{x.tag}</span></div>
+        {x.text.map((t,i)=><p key={i}>{t}</p>)}
+      </div>
+    </div>
+  );
+  return (
+    <div className="panel">
+      <div className="card">
+        <h2>The Time Stream — Where You Are Now</h2>
+        <div><span className="pill">Mahadasha: Mercury (Budha) · since ≈ Oct 2025</span><span className="pill">Antardasha: Mercury</span><span className="pill">Sade Sati: final / setting phase</span></div>
+        <p className="lead">You have just entered a major new chapter: the <b>17-year Mercury Mahadasha</b>. Because Mercury rules your <b>8th &amp; 11th houses</b> and sits in the <b>12th</b>, this whole era is about <b>research, transformation, networks, and income through remote / foreign / behind-the-scenes channels</b>. The first ~2.5 years run as Mercury–Mercury — pure Mercury flavour: mind, communication, skill, restructuring.</p>
+        <p className="small">Two big background tides in 2026: <b>(1)</b> the <i>setting phase of Sade Sati</i> (Saturn in Pisces, 2nd from your Moon) — the karmic pressure on money/family/speech is finally <b>easing</b>; <b>(2)</b> <i>Rahu transiting over your natal Moon</i> in Aquarius — restlessness, ambition and occasional anxiety. Guard your sleep and routine.</p>
+      </div>
+
+      <div className="card">
+        <h2>Past 6 Months — Month by Month</h2>
+        <p className="small">Dec 2025 → May 2026. <span className="dot g"></span>strong &nbsp;<span className="dot y"></span>mixed/transition &nbsp;<span className="dot r"></span>go slow</p>
+        {PAST.map(x=><Row key={x.m} x={x}/>)}
+      </div>
+
+      <div className="card">
+        <h2>Next 6 Months — Month by Month (2026)</h2>
+        <p className="small">Jun 2026 → Dec 2026.</p>
+        {FUTURE.map(x=><Row key={x.m} x={x}/>)}
+      </div>
+
+      <div className="note"><b>The 24-month arc:</b> 2026 is the warm-up of the Mercury era — find your global/remote niche, build your network, and make the career move around <b>Sep–Oct 2026</b>. 2027 carries exalted Jupiter through your 9th–10th zone and the <b>full exit from Sade Sati</b> — the real expansion, possible relocation and relationship commitment land in the 2027–2028 window.</div>
+    </div>
+  );
+}
+
+function Career(){
+  return (
+    <div className="panel">
+      <div className="card">
+        <h2>Career &amp; Karma — The 10th House</h2>
+        <div><span className="pill">10th: Leo</span><span className="pill">Lagna-lord Mars in 10th</span><span className="pill">10th-lord Sun in 11th</span><span className="pill">Saturn in 7th</span></div>
+        <p className="lead">Your career engine is unusually strong. <b>Mars — your Ascendant lord — sits in the 10th in royal Leo</b>, giving raw ambition, technical drive, competitiveness and natural authority. <b>Your 10th lord (Sun) is exalted-by-house in the 11th</b>, meaning your work translates directly into status, gains and a wide professional network.</p>
+        <h3>Saturn's Placement</h3>
+        <p>Saturn sits in your <b>7th house (Taurus) with Jupiter</b> — not in the 10th, but it casts its disciplined 10th-house aspect onto your career via its 3rd-aspect to the 9th and 10th zone. Translation: you grow through <b>partnerships, structure and patience</b>. Early career can feel slow or "tested," but Saturn rewards the long game with durable seniority. You are built to be trusted with responsibility, systems and people — eventually leadership.</p>
+        <h3>D10 (Dashamsha) Influence</h3>
+        <p className="small">The Dashamsha micro-chart of career is the most degree-sensitive layer, so treat this directionally until verified: the D1 signature (Mars in 10th, Sun in 11th, Mercury-Rahu emphasis on the 8th/research axis) points to a <b>specialist-to-leader trajectory</b> — deep technical mastery first, authority and team-leadership later. Rahu in the 8th (Gemini) is the classic marker of someone who thrives in <b>emerging, complex, "hidden-data" technology</b>.</p>
+
+        <h3>High-Growth Tech Sectors For You</h3>
+        <p>Scorpio + 8th-house Rahu in Gemini + Mercury (8th/11th lord) Mahadasha all point the same direction — <b>depth-tech and data</b>:</p>
+        <p className="small">★ Artificial Intelligence / Machine Learning &amp; Data Science &nbsp;·&nbsp; Cybersecurity, forensics &amp; defence-tech &nbsp;·&nbsp; Fintech / quant / algorithmic finance &nbsp;·&nbsp; Blockchain &amp; crypto infrastructure &nbsp;·&nbsp; Biotech / pharma / health-tech &nbsp;·&nbsp; Energy, oil &amp; chemical / deep-R&amp;D &nbsp;·&nbsp; Cloud, backend &amp; systems engineering. Your 12th-house Mercury says the best money flows from <b>global, remote, or foreign-based</b> employers/clients.</p>
+        <h3>Leadership Potential</h3>
+        <p>High. Mars (lagna lord) in Leo in the 10th = executive presence and the appetite to lead; the Sun (10th lord) in the 11th = recognition and the ability to command teams and networks. Saturn+Jupiter in the 7th means you lead best <b>in partnership / consulting / co-founding</b> structures rather than purely solo. Your edge is the <b>technical-founder or principal-engineer-to-director</b> path.</p>
+        <h3>Timing — "The Great Switch"</h3>
+        <p>The Mercury Mahadasha (from ≈Oct 2025) is itself the big life-pivot. The sharpest near-term window is the <b>Sun sub-period, Sep–Oct 2026</b> (your 10th lord switches on, around your solar return) — ideal for a role change, promotion or the decisive move. Exalted Jupiter crossing your 9th–10th zone through <b>2026–2027</b> widens that door further. <b>Plan the switch for autumn 2026, execute into 2027.</b></p>
+      </div>
+    </div>
+  );
+}
+
+function Love(){
+  return (
+    <div className="panel">
+      <div className="card">
+        <h2>Love &amp; Union — 7th House &amp; Venus</h2>
+        <div><span className="pill">7th: Taurus</span><span className="pill">Jupiter + Saturn in 7th</span><span className="pill">7th lord Venus in 12th (own sign)</span></div>
+        <p className="lead">Your house of marriage (Taurus) holds <b>both Jupiter and Saturn</b> — a profound, fated combination. Jupiter blesses the union with wisdom and longevity; Saturn demands maturity, patience and the right timing. Your 7th lord <b>Venus is strong in its own sign (Libra)</b> but tucked in the private 12th house.</p>
+        <div className="strength"><b>Great Strengths.</b> Once it arrives, your marriage is <b>blessed, loyal and lasting</b> (Jupiter in the 7th). You bond deeply and transformatively (Scorpio), and Venus in its own sign makes you magnetic and devoted. Your partner is likely <b>wise, principled, mature or knowledge-oriented</b> — someone who grounds you.</p>
+        <div className="truth"><b>Hard Truths.</b> Saturn in the 7th typically <b>delays</b> serious commitment until you've matured (often late-20s/30s) — and may bring an age/seniority gap or a need to earn the relationship through responsibility. Venus in the 12th means you keep love <b>private, idealised, or long-distance/foreign</b>, and you must avoid <b>secret or complicated entanglements</b> that drain you. Don't confuse intensity with compatibility.</p>
+        <h3>Timing</h3>
+        <p>The <b>Venus sub-period (Apr–Sep 2026)</b> warms relationships significantly — a meaningful connection or a step forward is likely, though a Venus retrograde in autumn says <b>revisit and confirm rather than rush</b>. Deeper commitment is best supported in the <b>2027–2028</b> window as Jupiter strengthens your relational houses and Saturn's lessons complete.</p>
+      </div>
+    </div>
+  );
+}
+
+function Health(){
+  return (
+    <div className="panel">
+      <div className="card">
+        <h2>Health &amp; Vitality</h2>
+        <div><span className="pill">Scorpio Lagna</span><span className="pill">Mars (lagna lord) in 10th</span><span className="pill">Moon under Rahu transit</span><span className="pill">Sade Sati: setting</span></div>
+        <p className="lead">Scorpio gives a <b>strong, resilient constitution</b> with deep recovery power — you bounce back from setbacks that would sideline others. With Mars (your body's ruler) energetic in Leo, you have good stamina and drive — provided you give that fire a healthy outlet.</p>
+        <div className="grid2">
+          <div>
+            <div className="strength"><b>Vitality Strengths.</b> Powerful immunity and recuperation, high physical energy, strong willpower to follow a regimen once committed. The 6th house (Aries/Mars) gives you the capacity to defeat illness, debt and rivals.</div>
+          </div>
+          <div>
+            <div className="truth"><b>Watch-outs.</b> Mars-heat → acidity, inflammation, blood/heat issues, and accident-proneness when rushed or angry. <b>Mind &amp; sleep are the real frontier in 2026:</b> Rahu transiting your natal Moon + the closing Sade Sati can bring anxiety, overthinking and disturbed sleep. Nervous-system care (8th-house Rahu) matters.</div>
+          </div>
+        </div>
+        <h3>Practical Vitality Plan</h3>
+        <p className="small">• Channel Mars: regular intense exercise (strength/cardio/martial arts) to burn excess heat and tension. &nbsp; • Cooling diet: reduce excess spice, caffeine, alcohol; favour cooling, hydrating foods. &nbsp; • Mind: daily meditation + pranayama (especially Anulom-Vilom / Bhramari) for the Rahu-Moon restlessness. &nbsp; • Sleep hygiene: fixed schedule — Saturn rewards routine. &nbsp; • Periodic checks: digestion/acidity and stress markers.</p>
+      </div>
+    </div>
+  );
+}
+
+function Wealth(){
+  return (
+    <div className="panel">
+      <div className="card">
+        <h2>Wealth / Artha — 2nd &amp; 11th Houses</h2>
+        <div><span className="pill">2nd: Sagittarius · Ketu</span><span className="pill">2nd lord Jupiter in 7th</span><span className="pill">11th: Virgo · Sun</span><span className="pill">11th lord Mercury in 12th (in Mahadasha)</span></div>
+        <p className="lead">Your wealth story has a clear shape: <b>income is powerful but flows through unconventional, global, or partnership channels</b> — and you must consciously convert that flow into savings.</p>
+        <div className="strength"><b>Great Strengths.</b> The <b>Sun in the 11th</b> gives steady gains through career, status and a strong network. Your <b>2nd lord (Jupiter) sits in the 7th</b> — wealth grows through <b>partnerships, clients, spouse and business relationships</b>. Best of all, your <b>11th lord Mercury is now in Mahadasha</b> — this 17-year era is your prime earning window, especially via <b>remote / foreign / tech income</b> (Mercury in the 12th).</p>
+        <div className="truth"><b>Hard Truths.</b> <b>Ketu in the 2nd house</b> makes accumulated savings and family-wealth feel unsteady — money can slip away through sudden expenses, vague spending, or a "detached" attitude toward it. Mercury (income lord) in the <b>12th</b> means cash flows out almost as fast as it flows in (expenses, investments, travel, foreign costs). Without a system, high earnings won't become high net-worth.</p>
+        <h3>The Artha Strategy</h3>
+        <p className="small">• <b>Automate savings &amp; investing</b> the moment income lands (beat the 12th-house leak). &nbsp; • Build <b>multiple income streams / global clients</b> — your 11th–8th–12th wiring loves this. &nbsp; • Avoid pure speculation (Ketu-2nd); favour <b>disciplined, long-horizon investing</b> (Saturn helps). &nbsp; • Partnerships and a financially-aligned spouse genuinely boost wealth (Jupiter as 2nd lord in 7th). &nbsp; • Keep an emergency buffer — the cash flow is lumpy, not linear.</p>
+      </div>
+    </div>
+  );
+}
+
+function Remedies(){
+  return (
+    <div className="panel">
+      <div className="card">
+        <h2>The Upayas — Personalised Remedies</h2>
+        <p className="small">Remedies in Jyotish are about <b>strengthening the mind and behaviour</b>, not magic. Start with mantras &amp; behaviour (free, safe). <b>Consult a qualified astrologer before wearing any gemstone</b> — wrong stones can backfire.</p>
+
+        <h3>★ Mercury — your running Mahadasha lord (highest leverage)</h3>
+        <p>Strengthen the planet steering your next 17 years. Wednesdays: wear green, help students, feed green fodder to cows, keep your word.</p>
+        <p className="mantra">ॐ बुं बुधाय नमः · "Om Bum Budhaya Namah" (108×, Wed mornings)</p>
+
+        <h3>Mars — your Ascendant lord (vitality &amp; courage)</h3>
+        <p>Tuesdays: Hanuman worship, recite the Hanuman Chalisa, donate red lentils (masoor) / jaggery, physical exercise as devotion. Gemstone (only if advised): Red Coral (Moonga).</p>
+        <p className="mantra">ॐ अं अंगारकाय नमः · "Om Ang Angarakaya Namah"</p>
+
+        <h3>Saturn — closing Sade Sati &amp; discipline</h3>
+        <p>Saturdays: serve elderly/labourers, donate black sesame, mustard oil, black/blue cloth; keep iron discipline and routine. This is the planet to honour while Sade Sati sets.</p>
+        <p className="mantra">ॐ शं शनैश्चराय नमः · "Om Sham Shanaishcharaya Namah"</p>
+
+        <h3>Moon &amp; Rahu — for the mind (2026's key remedy)</h3>
+        <p>With Rahu transiting your Aquarius Moon, protect mental peace: Monday Shiva worship, white foods/offerings, and daily <b>meditation + pranayama</b>. Avoid intoxicants and doom-scrolling; keep a grounding routine. For Rahu: donate to the marginalised, keep ethics clean.</p>
+        <p className="mantra">ॐ सोम सोमाय नमः (Moon) · ॐ भ्रां भ्रीं भ्रौं सः राहवे नमः (Rahu)</p>
+
+        <h3>Jupiter — your birth-dasha lord &amp; 2nd/5th significator</h3>
+        <p>Thursdays: yellow, turmeric, respect teachers/gurus, Vishnu/Brihaspati worship, charity to the learned. Supports marriage (7th) and fortune (exalted transit through your 9th in 2026).</p>
+        <p className="mantra">ॐ गुं गुरवे नमः · "Om Gum Gurave Namah"</p>
+
+        <h3>Behavioural Upayas (the most reliable of all)</h3>
+        <p className="small">• Automate savings to fix the 12th-house money-leak. &nbsp; • Make career moves in the Sep–Oct 2026 window, not impulsively in the Mar–Apr Ketu phase. &nbsp; • Channel Scorpio intensity into research/training instead of suspicion or control. &nbsp; • Protect sleep &amp; routine — your single best 2026 remedy. &nbsp; • Use the Venus months (Apr–Sep) for relationships &amp; finances.</p>
+      </div>
+    </div>
+  );
+}
+
+const TABS=[
+  {id:"overview",label:"Overview",el:<Overview/>},
+  {id:"time",label:"Time Stream ★",el:<TimeStream/>},
+  {id:"career",label:"Career & Karma",el:<Career/>},
+  {id:"love",label:"Love & Union",el:<Love/>},
+  {id:"health",label:"Health & Vitality",el:<Health/>},
+  {id:"wealth",label:"Wealth / Artha",el:<Wealth/>},
+  {id:"remedies",label:"Remedies",el:<Remedies/>},
+];
+
+function App(){
+  const [tab,setTab]=useState("overview");
+  return (
+    <div className="wrap">
+      <header>
+        <div className="eyebrow">Architect of Cosmic Destiny</div>
+        <div className="title">Kundali of Shubham Patel</div>
+        <div className="subtitle">A digital sanctuary of your destiny · North-Indian Lagna Chart</div>
+        <div className="birth-line">11 OCT 2000 · <span>10:45 AM</span> · VISNAGAR, GUJARAT, INDIA · <span>Sidereal / Lahiri</span></div>
+      </header>
+
+      <div className="card">
+        <NorthIndianChart/>
+        <div className="legend">
+          <span><b>Lagna</b> Scorpio 18°39' (Jyeshtha) · <b>Rashi</b> Aquarius (Purva Bhadrapada) · <b>Sun</b> Virgo · <b>Mahadasha</b> Mercury</span>
+        </div>
+      </div>
+
+      <div className="tabs">
+        {TABS.map(t=>(
+          <div key={t.id} className={"tab"+(tab===t.id?" active":"")} onClick={()=>setTab(t.id)}>{t.label}</div>
+        ))}
+      </div>
+
+      {TABS.find(t=>t.id===tab).el}
+
+      <footer>
+        <div className="om">ॐ</div>
+        <div>Built as a reflective Jyotish map — verify time-sensitive details with ephemeris software before major decisions.</div>
+        <div>तत् सत् · May the stars illuminate, never imprison, your free will.</div>
+      </footer>
+    </div>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(<App/>);
+</script>
+</body>
+</html>
